@@ -7,7 +7,6 @@ import { selectFilter } from "../../redux/filtersSlice";
 function ContactList() {
 	const contacts = useSelector(selectContacts);
 	const filter = useSelector(selectFilter);
-	console.log(contacts);
 
 	const visibleContacts = () => {
 		return contacts.filter(({ name }) =>
